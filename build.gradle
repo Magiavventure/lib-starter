@@ -20,11 +20,6 @@ java {
 	sourceCompatibility = '17'
 }
 
-test {
-	useJUnitPlatform()
-	finalizedBy jacocoTestReport
-}
-
 dependencyManagement {
 	imports {
 		mavenBom SpringBootPlugin.BOM_COORDINATES
@@ -51,12 +46,14 @@ repositories {
 
 ext {
 	commonVersion = '1.2.0'
-	jwtVersion = '1.1.9'
+	jwtVersion = '1.2.0'
+	mongoVersion = '1.0.0'
 }
 
 dependencies {
 	api "it.magiavventure:common:$commonVersion"
 	api "it.magiavventure:jwt:$jwtVersion"
+	api "it.magiavventure:mongo:$mongoVersion"
 }
 
 publishing {
