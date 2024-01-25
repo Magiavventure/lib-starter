@@ -46,7 +46,7 @@ repositories {
 
 ext {
 	commonVersion = '1.2.0'
-	jwtVersion = '1.4.0'
+	jwtVersion = '1.4.1'
 	mongoVersion = '1.0.0'
 }
 
