@@ -46,16 +46,17 @@ repositories {
 
 ext {
 	commonVersion = '1.3.0'
-	jwtVersion = '1.7.0'
+	jwtVersion = '1.8.0'
 	mongoVersion = '1.5.0'
 	cacheVersion = '1.0.0'
 }
 
 dependencies {
 	api "it.magiavventure:common:$commonVersion"
-	api "it.magiavventure:jwt:$jwtVersion"
 	api "it.magiavventure:mongo:$mongoVersion"
 	api "it.magiavventure:cache:$cacheVersion"
+	api "it.magiavventure:jwt:$jwtVersion"
+
 }
 
 publishing {
